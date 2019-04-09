@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Our Oceans</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Sea Turtles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa aspernatur fuga molestiae, beatae provident, enim necessitatibus rem molestias illum optio obcaecati nesciunt odio deleniti quos dicta aperiam nemo ab.</p>
+            
+            <img src="images/turtle2-800.jpg" 
+                alt="Sea turtle"
+                srcset="images/turtle2-200.jpg 200w,
+                        images/turtle2-400.jpg 400w,
+                        images/turtle2-800.jpg 800w"
+                sizes="(max-width:200px) 200px,
+                       (max-width:400px) 400px,
+                        800px">
+            
+            <p>Incidunt deserunt temporibus quod dolor, eaque reiciendis sunt debitis dicta quia, repellat assumenda dolore odit quas cumque voluptatum tempore corporis accusamus nulla ipsum a repellendus placeat modi consectetur veritatis. Praesentium!</p>
+            
+            <picture>
+                <source media="(max-width:250px)" 
+                srcset="images/turtle2-200.jpg">
+                <source media="(max-width:450px)" 
+                srcset="images/turtle2-400.jpg">
+                <source media="(max-width:451px)" 
+                srcset="images/turtle2-800.jpg">
+                <img src="images/turtle2-800.jpg" alt="sea turtle">
+            </picture>
+            
+        </section>
+    </main>
+</body>
+</html>
